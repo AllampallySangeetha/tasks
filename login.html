@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            h1{
+                background-color:pink;
+            }
+            legend{
+                background-color: blueviolet;
+            }
+            button{
+                background-color: cornflowerblue;
+            }
+            fieldset{
+                background-color: darkcyan;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>login successful</h1>
+        <fieldset>
+            <legend>login form</legend>
+            <form action="./welcome.html">
+                <label for="mail">Email:</label>
+                <input type="email" name="mail" id="mail"/><br><br>
+                <label for="pwd">Password:</label>
+                <input type="pwd" name="pwd" id="pwd"/><br><br>
+                <input type="submit"/>
+                <button formaction="./signup.html">need to create new account</button>   
+            </form>
+        </fieldset>
+    </body>
+</html>
