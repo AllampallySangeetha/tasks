@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>animation</title>
+  <style>
+    @keyframes test{
+      0%{
+        background-image: url(../day19/download.jpeg);
+      }
+      20%{
+        background-image: url(../day19/download\ \(1\).jpeg);
+      }
+      40%{
+        background-image: url(../day19/download\ \(2\).jpeg);
+      }
+      60%{
+        background-image: url(../day19/images.jpeg);
+      }
+      80%{
+        background-image: url(../day19/images\ \(1\).jpeg);
+      }
+    }
+    .div{
+      width: 1600px;
+      height: 1500px;
+      animation-name: test;
+      animation-duration: 5s;
+      animation-iteration-count: 1;
+      animation-direction:alternate;
+      animation-timing-function:linear;
+      /* background-repeat: no-repeat; */
+      /* background-size: cover; */
+      /* justify-content: center;
+      background-position:center; */
+    }
+    
+  </style>
+</head>
+<body>
+    <div class="test">
+      <div class="div">
+      </div>
+    </div> 
+</body>
+</html>
