@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Document</title>
+    <style>
+        .header{
+            display:flex;
+            padding:10px;
+            justify-content: space-between;
+        }
+        .first{
+            background-image: url("https://www.psychologs.com/wp-content/uploads/2023/08/Hodophile-A-Person-who-Loves-to-Travel.jpg");
+            height: 600px;
+           
+
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .sub{
+            border: 1px solid black;
+            height:300px;
+            width:550px;
+            position:absolute;
+            top:200px;
+            left:500px;
+            background-color: aliceblue;
+        }
+        .grid{
+            margin-left:200px;
+        }
+        .grid1{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            margin-left:200px;
+
+        }
+        .img{
+            grid-area: 1 /1 / span 2;
+            height:405px;
+            width:600px;
+            
+        }
+        .photos{
+            margin-left:200px;
+            margin-top:-100px;
+        }
+        .h{
+    
+            height:300px;
+            width:600px;
+            margin-left:200px;
+        }
+        .p{
+           
+            border:1px solid white;
+        }
+        .nandu{
+            display: flex;
+            gap:50px;
+            margin-left: 200px;
+        }
+        .o{
+            height:350px;
+            width:500px;
+           
+
+        }
+        .box{
+          margin-left: 200px; 
+          background-color: gray;
+          padding: 20px;
+        }
+        .box:hover{
+            
+            margin-left:200px;
+            border:1px solid black;
+            background-color: black;
+            color:white;
+        }
+        .mani{
+            margin-left:200px;
+        }
+        .naga{
+            text-align: center;
+        }
+        .mani input{
+          width: 1200px;
+        }
+        .mani button{
+          padding: 10px;
+          background-color: black;
+          color:white;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+    <div class="header">
+        <i class="fa fa-map-marker" style="font-size:24px">Logo</i>
+        <i class="fa fa-search" style="font-size:24px"></i>
+    </div>
+    <div class="first"></div>
+    <div class="sub">
+        <div class="container">
+
+            <ul class="nav nav-tabs">
+              <li class="active"><a data-toggle="tab" href="#home"><i class="fa fa-plane flight" style="font-size:15px;"><span>Flight</span></i></a></li>
+              <li><a data-toggle="tab" href="#menu1"><i class="fa fa-bed bed" style="font-size:15px"><span>Hotel</span></i></a></li>
+              <li><a data-toggle="tab" href="#menu2"><i class="fa fa-car car" style="font-size:15px"><span>Rental</span></i></a></li>
+            
+            </ul>
+          
+            <div class="tab-content">
+              <div id="home" class="tab-pane fade in active">
+                <div><h3 style="font-family:Arial, Helvetica, sans-serif;padding:10px">Travel the world with us</h3></div>
+                <form style="padding:10px">
+                    <label>From</label>
+                    <br>
+                    <input placeholder="Departing from">
+                    <label style="position:relative; top:-25px; left:25px;">To</label>
+                    <input placeholder="Arriving at">    
+                </form>
+                <div class="s">
+                <button>Search and find dates</button></div>
+                <br>
+              </div>
+              <div id="menu1" class="tab-pane fade">
+                <div class="box2">
+                  <h3>Find the best hotels</h3>
+                  <p>Book a hotel with us and get the best fares and promotions</p>
+                  <p>We know hotels - we know comfort.</p>
+                  <button>Search Hotels</button>
+              
+                </div>
+              </div>
+              <div id="menu2" class="tab-pane fade">
+              <div class="box3">
+                  <h3>Best car rental in the world!</h3>
+                  <button>DISCOUNT!</button>
+                  <p>Special offer if you book today:25% off anywhere in the world with CarServiceRentalRUs</p>
+                  <input placeholder="pick-up point">
+                  <br>
+                  <br>
+                  <button>Search Availability</button>
+                </div>
+              </div>
+              </div>
+            </div>
+    </div>
+    <div class="grid">
+        <h2>Good Offers Right Now</h2>
+        <p>Up to 50% discount.</p>
+    </div>
+    <div class="grid1">
+        
+        <img class="img"src="https://www.w3schools.com/w3images/cinqueterre.jpg" >
+        <img src="https://www.w3schools.com/w3images/newyork2.jpg" height="200px" width="300px">
+        <img src="https://www.w3schools.com/w3images/sanfran.jpg" height="200px" width="300px">
+        <img src="https://www.w3schools.com/w3images/paris.jpg" height="200px" width="300px">
+        <img src="https://www.w3schools.com/w3images/pisa.jpg" height="200px" width="300px">
+        <h3 style="position: relative;top:-50px;color: white;">Cinque Terre</h3>
+        <p style="position: relative;top:-250px;right:400px;color: black;">New York</p>
+        <span style="position: relative;top:-300px;left:800px;color:palevioletred;">Paris</span>
+        <h4 style="position: relative;top:-300px;left:1000px;color: violet;">San Francisco</h4>
+
+    </div>
+    <div class="photos">        
+        <h2>Explore Nature</h2>
+        <p>Travel with us and see nature at its finest.</p>
+    </div>
+     <div class="nandu">
+        <div class="one">
+        <img class="o"src="https://www.w3schools.com/w3images/ocean2.jpg">
+        <h2>West Coast, Norway</h2>
+        <p>Roundtrip from $79</p>
+        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+        <button>BUY TICKETS</button>
+        </div>
+        
+        <div class="two">
+        <img class="o"src="https://www.w3schools.com/w3images/ocean2.jpg">
+        
+        <h2>Mountains, Austria</h2>
+        <p>One-way from $39</p>
+        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo</p>
+        <button>BUY TICKETS</button>
+        </div>
+
+    </div>
+    <br>
+    <!-- <div class="boxes"> -->
+    
+   <div class="box">
+    <h2>Get the best offers first!</h2>
+    <p>Join our newsletter</p>
+    <label>Email:</label>
+    <input placeholder="Your Email address">
+    <br>
+    <br>
+    <button type="button" class="btn btn-info">Subscribe</button>
+   </div>
+   </div>
+
+   <div class="mani">
+    <h2>Contact</h2>
+    <p>Let us book your next trip!</p>
+    <i class="fa fa-map-marker" style="font-size:18px;">   Chicago, US</i><br>
+    <i class="fa fa-phone" style="font-size:18px;">   Phone: +00 151515</i><br>
+    <i class="fa fa-envelope" style="font-size:18px;">  Email: mail@mail.com</i>
+    <br>
+    <br>
+    <form action="/action_page.php" target="_blank">
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required="" name="Name"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required="" name="Email"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required="" name="Message"></p>
+        <p><button class="w3-button w3-black w3-padding-large" type="submit">SEND MESSAGE</button></p>
+    </form>
+    </div>
+
+   </div>
+   
+   <div class="naga">
+    <h2>Find Us On</h2>
+    <p>
+      <i class="fa fa-facebook" style="font-size:24px; color:grey"></i>
+      <i class="fa fa-instagram" style="font-size:24px; color:grey"></i>
+      <i class="fa fa-snapchat" style="font-size:24px; color:grey"></i>
+      <i class="fa fa-pinterest" style="font-size:24px; color:grey"></i>
+      <i class="fa fa-twitter" style="font-size:24px; color:grey"></i>
+      <i class="fa fa-linkedin" style="font-size:24px; color:grey"></i>
+  </p>
+        
+    </div>
+   </div>
+</div>
+    
+</body>
+</html>
